@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PROYECTO FINAL</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="estilos.css"/> <!--Link de referencia hacia el archivo css-->
+		<script src="javaScript.js"></script> <!--Link de referencia hacia el archivo javaScript-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script><!--Link de referencia online a la librería de Processing-->
+	</head>	
+	<body onload="muestraDia();muestraMes();"> <!--Se cargan las funciones en el body-->
+	<p id='id1'> V.BAHILLO Y S.BOTRÁN 2018-19</p>
+		<div id='div1'><!--Se crea una div con id único para cargar en ella la funcion muestraMes()-->
+		</div>
+		<table border="10"><!--Define el ancho del borde de la tabla-->
+			<tr class="td2"><!--Define la identificación de clase de un tr para aplicarle css-->
+				<td class="td4">HORAS</td>
+				<td id="p15"><strong>Lunes</strong></td>
+				<td id="p16"><strong>Martes</strong></td>
+				<td id="p17"><strong>Miércoles</strong></td>
+				<td id="p18"><strong>Jueves</strong></td>
+				<td id="p19"><strong>Viernes</strong></td>
+				<td id="p20"><strong>Sábado</strong></td>
+				<td id="p21"><strong>Domingo</strong></td>
+			</tr>
+			<tr class="td1">
+				<td class="p9">8:30-9:20</td>
+				<td id="1" class="p1" onclick="this.style.color='#5858FA'">Física</td><!--dentro del td se encuentra onclick, el cuál al pulsar este td cambia de color las letras al color del fondo y lo oculta-->
+				<td id="2" class="p2" onclick="this.style.color='#5858FA'">Matemáticas</td>
+				<td id="3" class="p3" onclick="this.style.color='#5858FA'">Lengua</td>
+				<td id="4" class="p2" onclick="this.style.color='#5858FA'">Matemáticas</td>
+				<td id="5" class="p4" onclick="this.style.color='#5858FA'">Tecnología industrial</td>
+				<td rowspan="7" class="p9" onclick="this.style.color='#5858FA'">Descanso</td>
+				<td rowspan="7" class="p9" onclick="this.style.color='#5858FA'">Descanso</td>
+			</tr>
+			<tr class="td1">
+				<td class="p9">9:25-10:15</td>
+				<td id="6" class="p4" onclick="this.style.color='#5858FA'">Tecnología industrial</td>
+				<td id="7" class="p5" onclick="this.style.color='#5858FA'">Inglés</td>
+				<td id="8" class="p4" onclick="this.style.color='#5858FA'">Tecnología industrial</td>
+				<td id="9" class="p7" onclick="this.style.color='#5858FA'">Dibujo técnico</td>
+				<td id="10" class="p5" onclick="this.style.color='#5858FA'">Inglés</td>			
+			</tr>
+			<tr class="td1">
+				<td class="p9">10:20-11:10</td>
+				<td id="11" class="p2" onclick="this.style.color='#5858FA'">Matemáticas</td>
+				<td id="12" class="p7" onclick="this.style.color='#5858FA'">Dibujo técnico</td>
+				<td id="13" class="p7" onclick="this.style.color='#5858FA'">Dibujo técnico</td>
+				<td id="14" class="p4" onclick="this.style.color='#5858FA'">Tecnología industrial</td>
+				<td id="15" class="p1" onclick="this.style.color='#5858FA'">Física</td>
+			</tr>
+			<tr class="td3">
+				<td class="p9">11:10-11:35</td>
+				<td colspan="5">Recreo</td>
+			</tr>
+			<tr class="td1">
+				<td class="p9">11:40-12:30</td>
+				<td id="16" class="p3" onclick="this.style.color='#5858FA'">Lengua</td>
+				<td id="17" class="p1" onclick="this.style.color='#5858FA'">Física</td>
+				<td id="18" class="p8" onclick="this.style.color='#5858FA'">TIC</td>
+				<td id="19" class="p8" onclick="this.style.color='#5858FA'">TIC</td>
+				<td id="20" class="p3" onclick="this.style.color='#5858FA'">Lengua</td>
+			</tr>
+			<tr class="td1">
+				<td class="p9">12:35-13:25</td>
+				<td id="21" class="p6" onclick="this.style.color='#5858FA'">Historia de España</td>
+				<td id="22" class="p6" onclick="this.style.color='#5858FA'">Historia de España</td>
+				<td id="23" class="p6" onclick="this.style.color='#5858FA'">Historia de España</td>
+				<td id="24" class="p1" onclick="this.style.color='#5858FA'">Física</td>
+				<td id="25" class="p8" onclick="this.style.color='#5858FA'">TIC</td>
+			</tr>
+			<tr class="td1">
+				<td class="p9" onclick="this.style.color='#5858FA'">13:30-14:20</td>
+				<td id="26" class="p5" onclick="this.style.color='#5858FA'">Inglés</td>
+				<td id="27" class="p3" onclick="this.style.color='#5858FA'">Lengua</td>
+				<td id="28" class="p2" onclick="this.style.color='#5858FA'">Matemáticas</td>
+				<td id="29" class="p6" onclick="this.style.color='#5858FA'">Historia de España</td>
+				<td id="30" class="p7" onclick="this.style.color='#5858FA'">Dibujo técnico</td>
+			</tr>
+		</table>
+		<input type="button" value="Lengua" onclick="Lengua()"/>
+		<input type="button" value="TIC" onclick="TIC()"/><!--Se crea un input de tipo botón el cual al ser pulsado ejecuta una función-->
+		<input type="button" value="Historia de España" onclick="Historia()"/>
+		<input type="button" value="Inglés" onclick="Ingles()"/>
+		<input type="button" value="Tecnología Industrial" onclick="TecnologiaIndustrial()"/>
+		<input type="button" value="Dibujo Técnico" onclick="Dibujo()"/>
+		<input type="button" value="Física" onclick="Fisica()"/>
+		<input type="button" value="Matemáticas" onclick="Matematicas()"/>
+		<div>
+			<input type="button" value="Pulsa para obtener la media" onclick="media()"/>
+		</div>
+		<div>
+			<script src="processing.js"></script><!--Dentro de la div aparece el archivo hecho en java script con librerías de processing-->
+		</div>
+	</body>
+</html>

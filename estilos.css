@@ -1,0 +1,66 @@
+			.p1{ 
+				color: #00FF00;/*define el color de la letra del html*/ 
+				text-align:center;/*alinea el texto de una celda o div al centro*/
+			}
+			.p2{ 
+				color: #868A08; 
+				text-align:center;
+			}
+			.p3{ 
+				color: #0F00F0; 
+				text-align:center;
+			}
+			.p4{ 
+				color: #FFFFFF; 
+				text-align:center;
+			}
+			.p5{ 
+				color: #FF0F00; 
+				text-align:center;
+			}
+			.p6{ 
+				color: #FF00F0; 
+				text-align:center;
+			}
+			.p7{ 
+				color: #000000; 
+				text-align:center;
+			}
+			.p8{ 
+				color: #FFF000; 
+				text-align:center;
+			}	
+			.p9{ 
+				background-color:#BDBDBD;/*define el color de fondo de una celda */
+				text-align:center;				
+			}
+			.td1{
+				background-color:#5858FA;
+				text-align:center;
+			}
+			.td2{
+				background-color:brown;
+				text-align:center;
+			}
+			.td3{
+				background-color:#BDBDBD;
+				text-align:center;
+			}
+			.td4{
+				background-color:#BDBDBD;
+			}
+			table{
+				border-radius: 15px;/*define el redondeado de las esquinas de una tabla*/
+			}
+			#div1{
+				border: 10px solid black;/*define un borde negro de 10 pixeles*/
+				margin: auto;/*Espacio entre el div y el borde de la página*/
+				padding:5px;/*Espacio entre el texto interior y el borde de la tabla*/
+				border-radius: 4px;
+				width: 100px;/*define el ancho de una tabla*/
+				height: 30px;/*define el alto de la tabla*/
+				font-size: 20px;/*define el tamaño de la letra*/
+				text-align: center;
+				background-color:#BDBDBD;
+				
+			}
